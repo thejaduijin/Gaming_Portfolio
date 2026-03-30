@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lokendra | Slot Game Developer</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500&family=Josefin+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── FLOATING CARD SUIT DECORATIONS ── -->
+  <div class="floater" style="top: 12%; left: 4%;   animation-duration: 9s;  animation-delay: -2s;">♠</div>
+  <div class="floater" style="top: 60%; left: 91%;  animation-duration: 11s; animation-delay: -4s;">♥</div>
+  <div class="floater" style="top: 38%; left: 88%;  animation-duration: 8s;  animation-delay: -1s; font-size: 80px;">♦</div>
+  <div class="floater" style="top: 78%; left: 5%;   animation-duration: 13s; animation-delay: -6s; font-size: 90px;">♣</div>
+
+  <!-- ── CUSTOM CURSOR ── -->
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ══════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════ -->
+  <nav>
+    <div class="nav-logo">Lokendra <span>· Dev</span></div>
+    <div class="nav-links">
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <div class="hero">
+
+    <!-- Decorative rule -->
+    <div class="rule">
+      <div class="rule-line"></div>
+      <div class="rule-diamond"></div>
+      <div class="rule-label">Portfolio · 2025</div>
+      <div class="rule-diamond"></div>
+      <div class="rule-line"></div>
+    </div>
+
+    <p class="hero-eyebrow">Frontend Game Developer &nbsp;·&nbsp; iGaming Specialist</p>
+
+    <h1 class="hero-name">Loken<em>dra</em></h1>
+
+    <p class="hero-title">
+      Crafting Immersive Slot Experiences &nbsp;·&nbsp; Pixi.js &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; 3.5 Years
+    </p>
+
+    <!-- Slot reel decorative element -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div class="slot-showcase">
+        <!-- Reel 1 -->
+        <div class="reel">
+          <div class="reel-inner" style="--delay: 0.1s; --end: -176px;">
+            <div class="sym">🍒</div>
+            <div class="sym">💎</div>
+            <div class="sym">7️⃣</div>
+            <div class="sym">⭐</div>
+            <div class="sym">💎</div>
+          </div>
+        </div>
+        <!-- Reel 2 -->
+        <div class="reel">
+          <div class="reel-inner" style="--delay: 0.25s; --end: -132px;">
+            <div class="sym">💰</div>
+            <div class="sym">🔔</div>
+            <div class="sym">7️⃣</div>
+            <div class="sym">🃏</div>
+          </div>
+        </div>
+        <!-- Reel 3 -->
+        <div class="reel">
+          <div class="reel-inner" style="--delay: 0.4s; --end: -176px;">
+            <div class="sym">🍋</div>
+            <div class="sym">🔔</div>
+            <div class="sym">7️⃣</div>
+            <div class="sym">♠</div>
+            <div class="sym">💎</div>
+          </div>
+        </div>
+      </div>
+      <p class="slot-label">Spin to win</p>
+    </div>
+
+    <p class="hero-desc">
+      Building high-performance, visually captivating slot games for the iGaming industry.
+      Every reel spin, every animation, every win celebration — crafted with precision.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#games" class="btn-primary">View My Games</a>
+      <a href="#contact" class="btn-ghost">Let's Talk</a>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+
+  </div><!-- /hero -->
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════════════════════════
+       01 — GAMES SHOWCASE
+  ═══════════════════════════════════════════ -->
+  <section id="games">
+
+    <div class="section-header reveal">
+      <div class="section-no">01</div>
+      <div class="section-title-group">
+        <p class="section-eyebrow">Game Showcase</p>
+        <h2 class="section-title">Titles I've Built</h2>
+      </div>
+    </div>
+
+    <div class="games-grid reveal">
+
+      <!-- Game 1 -->
+      <div class="game-card">
+        <div class="game-thumb">
+          <div class="game-thumb-icon">🎰</div>
+          <div class="game-badge badge-live">Live</div>
+        </div>
+        <div class="game-info">
+          <p class="game-genre">Classic Slots &nbsp;·&nbsp; 5-Reel</p>
+          <h3 class="game-name">Fortune's Edge</h3>
+          <p class="game-desc">
+            A Vegas-style 5-reel slot with cascading wilds, free spin bonus rounds,
+            and a multi-level jackpot system.
+          </p>
+          <div class="game-tags">
+            <span class="game-tag">Pixi.js</span>
+            <span class="game-tag">TypeScript</span>
+            <span class="game-tag">GSAP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game 2 -->
+      <div class="game-card">
+        <div class="game-thumb">
+          <div class="game-thumb-icon">🐉</div>
+          <div class="game-badge badge-live">Live</div>
+        </div>
+        <div class="game-info">
+          <p class="game-genre">Asian Theme &nbsp;·&nbsp; 6-Reel</p>
+          <h3 class="game-name">Dragon's Vault</h3>
+          <p class="game-desc">
+            Immersive oriental-themed slot with sticky re-spin mechanic,
+            expanding symbols, and animated dragon wild.
+          </p>
+          <div class="game-tags">
+            <span class="game-tag">Pixi.js</span>
+            <span class="game-tag">JavaScript</span>
+            <span class="game-tag">Spine</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game 3 -->
+      <div class="game-card">
+        <div class="game-thumb">
+          <div class="game-thumb-icon">🌙</div>
+          <div class="game-badge badge-studio">Studio</div>
+        </div>
+        <div class="game-info">
+          <p class="game-genre">Cluster Pays &nbsp;·&nbsp; Megaways</p>
+          <h3 class="game-name">Midnight Bloom</h3>
+          <p class="game-desc">
+            Cluster-pay mechanic with 117,649 Megaways, tumble feature,
+            and an escalating multiplier free spins bonus.
+          </p>
+          <div class="game-tags">
+            <span class="game-tag">Pixi.js</span>
+            <span class="game-tag">TypeScript</span>
+            <span class="game-tag">WebGL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game 4 -->
+      <div class="game-card">
+        <div class="game-thumb">
+          <div class="game-thumb-icon">💀</div>
+          <div class="game-badge badge-live">Live</div>
+        </div>
+        <div class="game-info">
+          <p class="game-genre">Adventure &nbsp;·&nbsp; 5×3</p>
+          <h3 class="game-name">Reaper's Realm</h3>
+          <p class="game-desc">
+            Gothic horror slot with pick-bonus minigame, scatter pays,
+            and a haunting particle system reel engine.
+          </p>
+          <div class="game-tags">
+            <span class="game-tag">Pixi.js</span>
+            <span class="game-tag">JavaScript</span>
+            <span class="game-tag">Particles</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game 5 -->
+      <div class="game-card">
+        <div class="game-thumb">
+          <div class="game-thumb-icon">🏛️</div>
+          <div class="game-badge badge-wip">In Dev</div>
+        </div>
+        <div class="game-info">
+          <p class="game-genre">Ancient Egypt &nbsp;·&nbsp; 5-Reel</p>
+          <h3 class="game-name">Pharaoh's Seal</h3>
+          <p class="game-desc">
+            Expanding wilds with mystery multipliers, linked jackpot pools,
+            and a collector-symbol bonus system.
+          </p>
+          <div class="game-tags">
+            <span class="game-tag">Pixi.js</span>
+            <span class="game-tag">TypeScript</span>
+            <span class="game-tag">PixiFilters</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game 6 -->
+      <div class="game-card">
+        <div class="game-thumb">
+          <div class="game-thumb-icon">⚡</div>
+          <div class="game-badge badge-studio">Studio</div>
+        </div>
+        <div class="game-info">
+          <p class="game-genre">Sci-Fi &nbsp;·&nbsp; InfiniReels</p>
+          <h3 class="game-name">Neon Protocol</h3>
+          <p class="game-desc">
+            Cyberpunk slot with InfiniReels mechanic, reel extension on each win,
+            and a hyper-speed bonus game sequence.
+          </p>
+          <div class="game-tags">
+            <span class="game-tag">Pixi.js</span>
+            <span class="game-tag">TypeScript</span>
+            <span class="game-tag">GLSL</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /games-grid -->
+
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════════════════════════
+       02 — ABOUT
+  ═══════════════════════════════════════════ -->
+  <section id="about">
+
+    <div class="section-header reveal">
+      <div class="section-no">02</div>
+      <div class="section-title-group">
+        <p class="section-eyebrow">About Me</p>
+        <h2 class="section-title">The Developer Behind the Reels</h2>
+      </div>
+    </div>
+
+    <div class="about-layout">
+
+      <!-- Portrait -->
+      <div class="about-portrait reveal">
+        <div class="portrait-frame">
+          <div class="portrait-placeholder">L</div>
+          <div class="corner corner-tl"></div>
+          <div class="corner corner-tr"></div>
+          <div class="corner corner-bl"></div>
+          <div class="corner corner-br"></div>
+        </div>
+        <p class="portrait-caption">Lokendra &nbsp;·&nbsp; Slot Game Developer</p>
+      </div>
+
+      <!-- Text -->
+      <div class="about-text reveal" style="transition-delay: 0.15s;">
+        <p class="about-lead">
+          I turn <em>reel mechanics</em> into unforgettable player experiences — one frame at a time.
+        </p>
+        <p class="about-body">
+          With 3.5 years deep in the iGaming trenches, I specialise in building slot games
+          that feel alive. My tools of choice are Pixi.js and TypeScript — but what really
+          drives my work is obsessing over the micro-details: the weight of a reel stop,
+          the timing of a win celebration, the fluidity of a symbol cascade.
+        </p>
+        <p class="about-body">
+          I've contributed to games spanning classic Vegas titles to complex Megaways engines.
+          I understand both the player psychology behind good slot design and the technical
+          architecture that makes it run at 60 fps across every device.
+        </p>
+
+        <div class="stats-row">
+          <div class="stat-box">
+            <div class="stat-number">3.5</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Games Shipped</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">60</div>
+            <div class="stat-label">FPS Target</div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn-primary">Open to New Roles</a>
+      </div>
+
+    </div><!-- /about-layout -->
+
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════════════════════════
+       03 — SKILLS
+  ═══════════════════════════════════════════ -->
+  <section id="skills">
+
+    <div class="section-header reveal">
+      <div class="section-no">03</div>
+      <div class="section-title-group">
+        <p class="section-eyebrow">Tech Stack</p>
+        <h2 class="section-title">Skills &amp; Expertise</h2>
+      </div>
+    </div>
+
+    <div class="skills-layout reveal">
+
+      <!-- Core Tech -->
+      <div class="skill-group">
+        <div class="skill-group-icon">🎮</div>
+        <div class="skill-group-name">Core Technologies</div>
+        <ul class="skill-list">
+          <li>
+            <div><strong>Pixi.js</strong> — WebGL Renderer</div>
+            <div class="skill-dots">
+              <div class="dot filled"></div><div class="dot filled"></div>
+              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
+            </div>
+          </li>
+          <li>
+            <div><strong>TypeScript</strong></div>
+            <div class="skill-dots">
+              <div class="dot filled"></div><div class="dot filled"></div>
+              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
+            </div>
+          </li>
+          <li>
+            <div><strong>JavaScript</strong> (ES2022+)</div>
+            <div class="skill-dots">
+              <div class="dot filled"></div><div class="dot filled"></div>
+              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
+            </div>
+          </li>
+          <li>
+            <div><strong>HTML5 / CSS3</strong></div>
+            <div class="skill-dots">
+              <div class="dot filled"></div><div class="dot filled"></div>
+              <div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div>
+            </div>
+          </li>
+          <li>
+            <div><strong>WebGL / GLSL</strong></div>
+            <div class="skill-dots">
+              <div class="dot filled"></div><div class="dot filled"></div>
+              <div class="dot filled"></div><div class="dot"></div><div class="dot"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Game Dev -->
+      <div class="skill-group">
+        <div class="skill-group-icon">🎲</div>
+        <div class="skill-group-name">Game Development</div>
+        <ul class="skill-list">
+          <li><div><strong>Slot Mechanics</strong> — Reels, Wilds, Scatters</div></li>
+          <li><div><strong>Megaways</strong> Engine Architecture</div></li>
+          <li><div><strong>Bonus Rounds</strong> — Pick, Spins, Collector</div></li>
+          <li><div><strong>Spine 2D</strong> Animations</div></li>
+          <li><div><strong>GSAP</strong> Timeline Animations</div></li>
+          <li><div><strong>Sound Design</strong> — Howler.js</div></li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-group">
+        <div class="skill-group-icon">⚙️</div>
+        <div class="skill-group-name">Tools &amp; Workflow</div>
+        <ul class="skill-list">
+          <li><div><strong>Webpack / Vite</strong> Bundlers</div></li>
+          <li><div><strong>Git</strong> Version Control</div></li>
+          <li><div><strong>Jira</strong> / Agile Workflow</div></li>
+          <li><div><strong>Adobe Animate</strong> / TexturePacker</div></li>
+          <li><div><strong>RGS</strong> Server Integration</div></li>
+          <li><div><strong>Cross-device</strong> Performance Tuning</div></li>
+        </ul>
+      </div>
+
+    </div><!-- /skills-layout -->
+
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════════════════════════
+       04 — CONTACT
+  ═══════════════════════════════════════════ -->
+  <section id="contact">
+
+    <div class="section-header reveal">
+      <div class="section-no">04</div>
+      <div class="section-title-group">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 class="section-title">Let's Build Something Great</h2>
+      </div>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- Left: info & links -->
+      <div class="contact-left reveal">
+        <p class="contact-lead">
+          Currently <em>open to new opportunities</em> in iGaming &amp; game development.
+        </p>
+        <p class="contact-body">
+          Whether you're a studio looking for a specialist slot developer, or a recruiter
+          with an exciting iGaming role — I'd love to connect. I bring deep technical skill
+          and a genuine passion for the craft.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:lokendra@email.com" class="contact-link">
+            <span class="contact-link-icon">✉</span>
+            <div>
+              <span class="contact-link-label">Email</span>
+              lokendra.06.work@gmail.com
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/lokendra-singh-1b9169162/" target="_blank" class="contact-link">
+            <span class="contact-link-icon">in</span>
+            <div>
+              <span class="contact-link-label">LinkedIn</span>
+              linkedin.com/in/lokendra
+            </div>
+          </a>
+          <a href="https://github.com/thejaduijin" target="_blank" class="contact-link">
+            <span class="contact-link-icon">⌥</span>
+            <div>
+              <span class="contact-link-label">GitHub</span>
+              github.com/lokendra
+            </div>
+          </a>
+          <a href="#" class="contact-link">
+            <span class="contact-link-icon">📄</span>
+            <div>
+              <span class="contact-link-label">Resume</span>
+              Download CV — PDF
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer>
+    <p class="footer-copy">&copy; 2025 <span>Lokendra</span> &nbsp;·&nbsp; Slot Game Developer</p>
+    <div class="rule">
+      <div class="rule-diamond"></div>
+      <div class="rule-label" style="color: var(--text-dim);">Made with Pixi &amp; passion</div>
+      <div class="rule-diamond" style="background: var(--text-dim);"></div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+
+</body>
+</html>

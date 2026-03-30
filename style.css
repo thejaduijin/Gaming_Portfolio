@@ -768,11 +768,11 @@ section {
 }
 
 /* ── CONTACT ─────────────────────────────────── */
-.contact-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  align-items: start;
+/* ── CONTACT — centred ───────────────────────── */
+.contact-centered {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contact-lead {
@@ -781,7 +781,7 @@ section {
   font-weight: 300;
   color: var(--text-main);
   line-height: 1.4;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .contact-lead em {
@@ -793,13 +793,15 @@ section {
   font-size: 0.88rem;
   line-height: 1.9;
   color: var(--text-muted);
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.8rem;
 }
 
-.contact-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
+/* 2-column grid for the 4 link cards */
+.contact-links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
 }
 
 .contact-link {
@@ -809,11 +811,13 @@ section {
   font-size: 0.88rem;
   text-decoration: none;
   color: var(--text-muted);
-  padding: 0.9rem 1.2rem;
-  border: 0.5px solid var(--border);
+  padding: 1rem 1.4rem;
+  background: var(--bg-card);
+  border: none;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
+  text-align: left;
 }
 
 .contact-link::before {
@@ -829,9 +833,8 @@ section {
 }
 
 .contact-link:hover {
-  border-color: var(--border-bright);
   color: var(--text-main);
-  background: rgba(201, 168, 76, 0.04);
+  background: rgba(201, 168, 76, 0.05);
 }
 
 .contact-link:hover::before {
@@ -840,109 +843,20 @@ section {
 
 .contact-link-label {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 0.55rem;
+  font-size: 0.52rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
   display: block;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.15rem;
 }
 
 .contact-link-icon {
   font-size: 1.1rem;
   flex-shrink: 0;
-}
-
-/* ── CONTACT FORM ────────────────────────────── */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  background: var(--border);
-}
-
-.form-group {
-  background: var(--bg-card);
-  padding: 1rem 1.2rem;
-}
-
-.form-label {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 0.58rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--gold);
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.form-input,
-.form-textarea {
-  width: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: var(--text-main);
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 300;
-  resize: none;
-}
-
-.form-textarea {
-  min-height: 90px;
-}
-
-.form-input::placeholder,
-.form-textarea::placeholder {
-  color: var(--text-dim);
-}
-
-.form-submit {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  background: var(--gold);
-  color: #000;
-  border: none;
-  padding: 1.2rem;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background 0.3s, opacity 0.3s;
-  width: 100%;
-}
-.form-submit:hover:not(:disabled) {
-  background: var(--gold-light);
-}
-.form-submit:disabled {
-  cursor: not-allowed;
   opacity: 0.7;
 }
 
-/* ── Form status message ── */
-.form-status {
-  display: none;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 0.65rem;
-  letter-spacing: 0.1em;
-  padding: 0.75rem 1rem;
-  border-left: 2px solid;
-  background: var(--bg-card);
-}
-.form-status:not(:empty) {
-  display: block;
-}
-.form-status--success {
-  color: #4ade80;
-  border-color: rgba(74, 222, 128, 0.55);
-  background: rgba(74, 222, 128, 0.05);
-}
-.form-status--error {
-  color: #ff7070;
-  border-color: rgba(255, 100, 100, 0.55);
-  background: rgba(255, 100, 100, 0.05);
-}
 
 /* ── FOOTER ──────────────────────────────────── */
 footer {
@@ -987,8 +901,8 @@ footer {
   .nav-links { display: none; }
   section { padding: 5rem 1.5rem; }
   .about-layout,
-  .contact-layout,
   .skills-layout { grid-template-columns: 1fr; }
+  .contact-links-grid { grid-template-columns: 1fr; }
   .hero { padding: 7rem 1.5rem 4rem; }
   footer { padding: 2rem 1.5rem; }
 }
